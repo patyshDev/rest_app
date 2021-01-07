@@ -1,4 +1,4 @@
-package ru.snakesnake.restapp.rest_app.controllers;
+package ru.snakesnake.restapp.rest_app.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

@@ -1,4 +1,4 @@
-package ru.snakesnake.restapp.rest_app.config.handler;
+package ru.snakesnake.restapp.rest_app.security.handler;
 
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.authority.AuthorityUtils;
