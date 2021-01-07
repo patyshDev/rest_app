@@ -117,7 +117,7 @@ $(function () {
                     api.saveUser(user,function (responseUser) {
                         addUser.find('input').val('');
                         updateUsers();
-                        // $('#nav-home-tab').tab('show');
+                        $('#nav-home-tab').tab('show');
 
                     });
                 });

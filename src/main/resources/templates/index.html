@@ -25,7 +25,7 @@
 <div class="container-fluid p-0">
     <div class="d-flex align-items-start">
         <div class="col col-2 bg-white vh-100 text-center">
-            <div class="nav flex-column nav-pills bg-white">
+            <div class="nav flex-column nav-pills bg-white" id="myTab">
                 <a sec:authorize="hasRole('ROLE_ADMIN')" class="nav-link" th:classappend="${autUser.getRoleTitles().contains('ROLE_ADMIN')} ? 'active' : ''" data-bs-toggle="pill" href="#adminPanelPage">Admin</a>
                 <a class="nav-link" th:classappend="${!autUser.getRoleTitles().contains('ROLE_ADMIN')} ? 'active' : ''" data-bs-toggle="pill" href="#userPage">User</a>
             </div>
@@ -37,8 +37,8 @@
                     <nav>
                         <div class="nav nav-tabs" id="nav-tab" role="tablist">
                             <a aria-controls="nav-home" aria-selected="true" class="nav-link active"
-                               data-bs-toggle="tab" href="#nav-home" id="nav-home-tab" role="tab">User table</a>
-                            <a aria-controls="nav-profile" aria-selected="false" class="nav-link addUser" data-bs-toggle="tab"
+                               data-toggle="tab" href="#nav-home" id="nav-home-tab" role="tab">User table</a>
+                            <a aria-controls="nav-profile" aria-selected="false" class="nav-link addUser" data-toggle="tab"
                                href="#nav-profile" id="nav-profile-tab" role="tab">New User</a>
                         </div>
                     </nav>
